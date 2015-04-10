@@ -161,9 +161,6 @@ zone "<%= key %>" IN {
 
 <% end -%>
 <% end -%>
-<% if @recursion == 'yes' -%>
-include "/etc/named.rfc1912.zones";
-<% end -%>
 <% end -%><%# end no views -%>
 <% if !@includes.empty? -%>
 <% @includes.each do |filename| -%>
